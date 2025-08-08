@@ -1,39 +1,74 @@
-# Predicción de Abandono de Clientes - Empresa de Telecomunicaciones
+# Predicción de Abandono de Clientes en Telecomunicaciones
 
-Este proyecto lo realicé como parte de la Diplomatura en Ciencia de Datos (UTN).  
-El objetivo fue analizar datos de clientes para predecir la probabilidad de que dejen el servicio, usando técnicas de Machine Learning.
+Este proyecto fue desarrollado como parte de la **Diplomatura en Ciencia de Datos (UTN)**.  
+El objetivo es analizar datos de clientes de una empresa de telecomunicaciones para **predecir la probabilidad de abandono (churn)** utilizando técnicas de Machine Learning.
 
 ---
 
-## Objetivos
-- Analizar el comportamiento y características de los clientes.
+## Objetivos del Proyecto
+- Analizar y comprender patrones de comportamiento de los clientes.
 - Detectar variables que influyen en el abandono.
-- Entrenar modelos y comparar su rendimiento.
+- Entrenar y evaluar modelos predictivos para identificar clientes en riesgo.
 
 ---
 
-## Contenido
-- **EDA**: limpieza, exploración y visualización de datos.
-- **Feature Engineering**: creación y selección de variables.
-- **Modelado**: pruebas con Regresión logística, Naive Bayes y otros algoritmos.
-- **Evaluación**: métricas como accuracy, recall y matriz de confusión.
+## Contenido del Repositorio
+- **Proyecto empresa telecom.ipynb** → Notebook principal con análisis y modelado.
+- **requirements.txt** → Librerías necesarias.
+- **/img** → Gráficos y visualizaciones (opcional).
+- **/data** → Dataset utilizado (si es público).
 
 ---
 
-## Tecnologías
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
+##  Tecnologías y Librerías Utilizadas
+- Python 3.x
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 - Scikit-learn
-- XGBoost
+- imbalanced-learn
+
+---
+
+## Flujo de Trabajo
+1. **Carga y exploración de datos**
+   - Limpieza y tratamiento de valores faltantes.
+   - Análisis exploratorio (EDA).
+2. **Análisis de variables**
+   - Distribuciones.
+   - Correlaciones.
+   - Selección de variables relevantes.
+3. **Preparación de datos**
+   - Codificación de variables categóricas.
+   - Escalado de variables numéricas.
+   - Manejo del desbalance de clases con SMOTE.
+4. **Modelado y evaluación**
+   - Modelos probados: Random Forest, XGBoost.
+   - Métricas: Accuracy, Precision, Recall, F1-score, Matriz de confusión.
 
 ---
 
 ## Resultados
-- Modelo con mejor rendimiento: [Regresión logística]  
-Accuracy: 85%
+- **Modelo con mejor rendimiento:** _[Indicar modelo]_  
+- **Métricas principales:**  
+  - Accuracy: XX%  
+  - Recall: XX%  
+  - Precision: XX%  
+- **Insights relevantes:**  
+  1. _Insight 1_  
+  2. _Insight 2_  
+  3. _Insight 3_
 
 ---
+
+## Cómo Ejecutar el Proyecto
+
+### 1. Clonar este repositorio
+```bash
+git clone https://github.com/valen2202/prediccion-abandono-telecom.git
+cd prediccion-abandono-telecom
+
 
 ## Cómo usarlo
 1. Clonar este repositorio.
