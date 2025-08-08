@@ -1,16 +1,42 @@
-# Predicción de Abandono de Clientes en Telecomunicaciones
+# Predicción de Abandono de Clientes - Empresa de Telecomunicaciones
 
-📌 **Descripción**  
-Proyecto realizado como parte de la Diplomatura en Ciencia de Datos (UTN).  
-El objetivo es analizar los datos de una empresa de telecomunicaciones y desarrollar un modelo de Machine Learning para predecir la probabilidad de que un cliente abandone el servicio.
-
----
-
-## 📊 Objetivos
-- Analizar patrones de comportamiento de los clientes.
-- Identificar variables clave que influyen en el abandono.
-- Construir un modelo predictivo con métricas de evaluación claras.
+Este proyecto lo realicé como parte de la Diplomatura en Ciencia de Datos (UTN).  
+El objetivo fue analizar datos de clientes para predecir la probabilidad de que dejen el servicio, usando técnicas de Machine Learning.
 
 ---
 
-## 📂 Estructura del Proyecto
+## Objetivos
+- Analizar el comportamiento y características de los clientes.
+- Detectar variables que influyen en el abandono.
+- Entrenar modelos y comparar su rendimiento.
+
+---
+
+## Contenido
+- **EDA**: limpieza, exploración y visualización de datos.
+- **Feature Engineering**: creación y selección de variables.
+- **Modelado**: pruebas con Regresión logística, Naive Bayes y otros algoritmos.
+- **Evaluación**: métricas como accuracy, recall y matriz de confusión.
+
+---
+
+## Tecnologías
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- XGBoost
+
+---
+
+## Resultados
+- Modelo con mejor rendimiento: [Regresión logística]  
+Accuracy: 85%
+
+---
+
+## Cómo usarlo
+1. Clonar este repositorio.
+2. Instalar las dependencias:
+   ```bash
+   pip install -r requirements.txt
