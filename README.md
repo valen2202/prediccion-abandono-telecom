@@ -20,7 +20,7 @@ El objetivo es analizar datos de clientes de una empresa de telecomunicaciones p
 
 ---
 
-##  Tecnologías y Librerías Utilizadas
+## Tecnologías y Librerías Utilizadas
 - Python 3.x
 - Pandas
 - NumPy
@@ -44,21 +44,25 @@ El objetivo es analizar datos de clientes de una empresa de telecomunicaciones p
    - Escalado de variables numéricas.
    - Manejo del desbalance de clases con SMOTE.
 4. **Modelado y evaluación**
-   - Modelos probados: Random Forest, XGBoost.
-   - Métricas: Accuracy, Precision, Recall, F1-score, Matriz de confusión.
+   - Modelos probados: Regresión Logística, KNN, Naive Bayes.
+   - Métricas: AUC, Recall, Precision, F1-score.
 
 ---
 
 ## Resultados
-- **Modelo con mejor rendimiento:** _[Indicar modelo]_  
-- **Métricas principales:**  
-  - Accuracy: XX%  
-  - Recall: XX%  
-  - Precision: XX%  
-- **Insights relevantes:**  
-  1. _Insight 1_  
-  2. _Insight 2_  
-  3. _Insight 3_
+
+| Modelo               | AUC   | Recall (Churn) | Precision (Churn) | F1-Score |
+|----------------------|-------|----------------|-------------------|----------|
+| Regresión Logística  | 0.845 | 0.71           | 0.58              | **0.64** |
+| KNN                  | 0.843 | **0.86**       | 0.47              | 0.61     |
+| Naive Bayes          | 0.833 | 0.80           | 0.50              | 0.62     |
+
+**Modelo con mejor rendimiento:** Regresión Logística (AUC más alto y buen equilibrio en métricas).  
+
+**Insights relevantes:**
+1. El Recall es clave en este problema, ya que es más importante identificar correctamente a los clientes que podrían abandonar.
+2. KNN logró el mejor Recall (0.86), pero con menor precisión.
+3. La Regresión Logística ofrece un equilibrio entre AUC, Recall y Precision, siendo una buena opción para producción.
 
 ---
 
@@ -68,6 +72,7 @@ El objetivo es analizar datos de clientes de una empresa de telecomunicaciones p
 ```bash
 git clone https://github.com/valen2202/prediccion-abandono-telecom.git
 cd prediccion-abandono-telecom
+
 
 
 ## Cómo usarlo
